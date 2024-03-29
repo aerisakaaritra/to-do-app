@@ -1,0 +1,131 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-image: linear-gradient(to right, #1f1d1d, #294270);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px, rgba(0, 0, 0, 0.08) 0 0 1px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 800px;
+  margin-top: 50px;
+}
+
+.list-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: rgba(0, 0, 0, 0.05) 1px solid;
+}
+
+.button-container, .info-container{
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.button-container button {
+  margin: 0px 5px;
+  padding: 5px 10px;
+  border-radius: 12px;
+  background-color: transparent;
+  font-size: 10px;
+}
+
+.list-item{
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 0 0 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tick{
+  padding: 10px;
+}
+
+.tick path{
+  fill: none;
+  stroke: black;
+  stroke-miterlimit: 10;
+  stroke-width: 32px;
+}
+
+.edit{
+  border: 1.5px solid;
+  color: #a993ff;
+}
+
+.edit:hover{
+  background-image: linear-gradient(to right, #a1e9b3, #e8edcc);
+}
+
+.edit:active{
+  color: #a993ff;
+  border: 1.5px solid #a1e9b3;
+  background-image: linear-gradient(to right, #e8edcc, #a1e9b3);
+}
+
+.delete{
+  border: 1.5px solid;
+  color: #ff5252;
+}
+
+.delete:hover{
+  background-image: linear-gradient(to right, #ff5252, #e8edcc);
+}
+
+.delete:active{
+  color: #a993ff;
+  border: 1.5px solid #ff5252;
+  background-image: linear-gradient(to right, #e8edcc, #ff5252);
+}
+
+.create-new{
+  border: 1.5px solid;
+  color: rgb(198, 166, 212);
+}
+
+.create-new:hover{
+  background-image: linear-gradient(to right, rgb(198, 166, 212), #e8edcc);
+}
+
+.create-new:active{
+  color: #a993ff;
+  border: 1.5px solid #8980d7;
+  background-image: linear-gradient(to right, rgb(198, 166, 212), #7dd7dd);
+}
+
+.signout{
+  border: 1.5px solid;
+  color: rgb(198, 166, 212);
+}
+
+.signout:hover{
+  background-image: linear-gradient(to right, #ff5252, #e8edcc) !important;
+}
+
+.signout:active{
+  color: #a993ff;
+  border: 1.5px solid #ff5252;
+  background-image: linear-gradient(to right, #e8edcc, #ff5252);
+}
